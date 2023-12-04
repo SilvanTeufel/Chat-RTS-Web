@@ -1,0 +1,93 @@
+.nav-container{
+    top:50px;
+    height: 70px;
+    width:70px;
+    background-color: #fff;
+    border-radius:50px;
+    position: fixed;
+    transition: 0.4s ease;
+  }
+.nav-container.active{
+    height:420px;
+}
+.toggleBox{
+    position: relative;
+    display:block;
+    height: 70px;
+    width:70px;
+    border-radius:50px;
+    background:transparent;
+    border:none;
+}
+.toggleBox.active .icon{
+    width:0;
+}
+.icon{
+    position: absolute;
+    height:4px;
+    width:35px;
+    top:50%;
+    left:35%;
+    transform: translate(-50%,-50%);
+    background-color: #000;
+    border-radius:50px;
+}
+.icon::before, .icon::after{
+    position: absolute;
+    content:'';
+    height:4px;
+    width:35px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #000;
+    border-radius:50px;
+    transition: 0.3s;
+}
+.icon::before{
+    top:12px;
+}
+.icon::after{
+    bottom:8px;
+}
+.toggleBox.active .icon::before{
+    width:40px;
+    transform-origin: right;
+    transform: translate(-25px,4px) rotate(45deg)
+}
+.toggleBox.active .icon::after{
+    width:40px;
+    transform-origin: right;
+    transform: translate(-25px,-6px) rotate(-45deg)
+}
+.menu{
+    display:none;
+}
+@keyframes grow {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+.menu.active{
+    display: block;
+    animation-name: grow;
+    animation-duration: 2s;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    text-decoration:none;
+    color: #000;
+}
+svg{
+    width:40px;
+    height:40px;
+}
+.navItem:hover svg path, .nav-link.active svg path {
+    fill:blue !important;
+}
+.navItem:hover .nav-text{
+    transform: translate(10px, 0px);
+}
+.navItem:hover .nav-text span,.nav-link.active {
+    color:blue;
+    font-weight: bold;
+}
