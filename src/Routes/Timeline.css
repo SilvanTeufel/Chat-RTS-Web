@@ -73,7 +73,7 @@
     right: 30px;
     border: medium solid white;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #FFAC61;
+    border-color: transparent transparent transparent #000000;
 }
   
 /* arrows right container (pointing left) */
@@ -87,7 +87,7 @@
     left: 30px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #FFAC61 transparent transparent;
+    border-color: transparent #000000 transparent transparent;
 }
   
 /* Fix the circle for containers on the right side */
@@ -101,7 +101,7 @@
     background-color: #fff;
     position: relative;
     border-radius: 6px;
-    border: 4px solid #FFAC61;
+    border: 4px solid #000000;
 }
   
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -123,7 +123,7 @@
         left: 60px;
         border: medium solid white;
         border-width: 10px 10px 10px 0;
-        border-color: transparent #FFAC61 transparent transparent;
+        border-color: transparent #000000 transparent transparent;
     }
   
     /* Make sure all circles are at the same spot */

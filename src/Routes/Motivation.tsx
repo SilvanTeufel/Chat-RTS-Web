@@ -22,7 +22,7 @@ const Motivation = () => {
 
           {/* Call to action button */}
           <div className="d-flex justify-content-center">
-            <a href="/home" className="btn btn-primary btn-lg mt-3">
+            <a href="/home" className="btn btn-danger btn-lg mt-3">
               Join the Battle
             </a>
           </div>

@@ -11,7 +11,7 @@ const Contact = () => {
           
           {/* Email section with a mailto link */}
           <div className="my-4">
-            <a href="mailto:info@teufel-engineering.com" className="btn btn-primary">
+            <a href="mailto:info@teufel-engineering.com" className="btn btn-danger">
               info@teufel-engineering.com
             </a>
           </div>

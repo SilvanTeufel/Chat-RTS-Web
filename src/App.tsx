@@ -13,11 +13,11 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div className="container-fluid">
+      <div className="container-flex bg-white">
         <Navbar />
         <Header /> {/* Add the Header here */}
         <div className="d-flex justify-content-center">
-          <div>
+         <div className="border border-4 border-dark mt-5 mb-5"> {/* Bootstrap border class */}
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />

@@ -37,7 +37,7 @@ const Home = () => {
       </div>
 
       <div className="mb-4">
-        <button className="btn btn-primary me-2">Join the Battle</button>
+        <button className="btn btn-danger me-2">Join the Battle</button>
         <button className="btn btn-secondary">Learn More</button>
       </div>
     </div>

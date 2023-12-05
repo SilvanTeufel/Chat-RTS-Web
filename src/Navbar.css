@@ -82,12 +82,12 @@ svg{
     height:40px;
 }
 .navItem:hover svg path, .nav-link.active svg path {
-    fill:blue !important;
+    fill:red !important;
 }
 .navItem:hover .nav-text{
     transform: translate(10px, 0px);
 }
 .navItem:hover .nav-text span,.nav-link.active {
-    color:blue;
+    color:red;
     font-weight: bold;
 }

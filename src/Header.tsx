@@ -1,12 +1,18 @@
-// Header.tsx
 import React from 'react';
-
+import backgroundImage from './img/banner2.png';
 
 const Header = () => {
+  const headerStyle = {
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover', // or 'contain' depending on your requirement
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  };
+
   return (
-    <header className="bg-dark text-white text-center py-3">
-      <h1>ChatRTS: The Twitch-Chat Controlled RTS Game</h1>
-      <p>Join the real-time war, select your class, and make your mark!</p>
+    <header style={headerStyle} className="text-black text-center py-3">
+      <h1>ChatRTS</h1>
+      <h4>The Twitch-Chat Controlled RTS Game</h4>
     </header>
   );
 };
