@@ -44,7 +44,7 @@ class Navbar extends React.Component<{}, NavbarState> {
  state = {
     active: false,
     icons: [<Home />, <Motivation />, <Code />, <Contact />, <Credits />],
-    text: ['Home', 'Motivation', 'Roadmap', 'Kontakt', 'Credits'],
+    text: ['Home', 'Motivation', 'Roadmap', 'Contact', 'Credits'],
     href: ['', 'motivation', 'roadmap', 'contact', 'credits']
  }
 
