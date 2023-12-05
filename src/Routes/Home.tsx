@@ -14,17 +14,22 @@ const Home = () => {
       </p>
 
       {/* YouTube Video Embed */}
-      <div className="embed-responsive embed-responsive-16by9 my-4">
-        <iframe
-          width="100%" // This sets the iframe width to 100% of its container
-          height="700" // This sets the iframe height to 500px. Adjust as needed.
-          className="embed-responsive-item"
-          src={`https://www.youtube.com/embed/${videoEmbedId}`}
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        ></iframe>
+      <div className="row">
+      <div className="col-1"></div> 
+        <div className="col-10"> 
+          <div className="embed-responsive embed-responsive-16by9 my-4 border border-4 border-dark">
+            <iframe
+              width="100%" // This sets the iframe width to 100% of its container
+              height="700" // This sets the iframe height to 500px. Adjust as needed.
+              className="embed-responsive-item"
+              src={`https://www.youtube.com/embed/${videoEmbedId}`}
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+          </div>
+        </div>
+        <div className="col-1"></div> 
       </div>
-
       <div className="my-4">
         <h2>Game Features:</h2>
         <ul className="list-unstyled">
